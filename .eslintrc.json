@@ -1,3 +1,59 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["..*"]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "prefer-destructuring": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "no-nested-ternary": "warn",
+    "react/no-unused-prop-types": "error",
+    "react/hook-use-state": "error",
+    "react/function-component-definition": [
+      1,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-key": "error",
+    "react/no-array-index-key": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-console": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "complexity": ["warn", 10],
+    "eqeqeq": "error",
+    "prefer-arrow-callback": "error",
+    "arrow-body-style": ["warn", "as-needed"],
+    "func-style": ["error", "expression"]
+  },
+  "overrides": [
+    {
+      "files": ["pages/**/*.tsx", "pages/**/*.ts"],
+      "rules": {
+        "import/prefer-default-export": "error",
+        "import/no-default-export": "off"
+      }
+    }
+  ]
 }

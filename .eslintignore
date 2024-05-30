@@ -1,0 +1,14 @@
+**/*.html
+**/*.scss
+
+**/*.json
+
+tailwind.config.ts
+
+node_modules/**
+
+components/AtomicDesign/Atoms/Shadcn/*
+
+jest.config.ts
+
+__mocks__
