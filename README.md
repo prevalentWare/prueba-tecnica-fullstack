@@ -65,7 +65,7 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
     - Base de datos de Postgres en Supabase.
     - **Protección de Datos:** Implementar control de acceso basado en roles (RBAC) para asegurar que solo los usuarios autorizados puedan acceder a ciertas funcionalidades y datos.
   - **Autenticación:**
-    - Utilizar NextAuth con Auth0 para la autenticación.
+    - Utilizar Authjs con Auth0 como proveedor y Prisma como adaptador para la autenticación por sesiones de base de datos.
   - **Despliegue:**
     - Desplegar el proyecto en Vercel.
 
