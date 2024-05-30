@@ -2,7 +2,7 @@
 
 ### Introducción
 
-El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo de una aplicación fullstack. Deberás implementar un sistema de gestión de ingresos y egresos, la gestión de usuarios y la generación de reportes. El diseño de la interfaz está proporcionado en los [wireframes](<https://www.figma.com/design/2PINjveveJJ9ZAAwxwNoRK/Wireframes-(Copy)?node-id=0-1&t=6q0Q0id8YnjH9fJt-1>).
+El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo de una aplicación fullstack. Deberás implementar un sistema de gestión de ingresos y egresos, la gestión de usuarios y la generación de reportes. El proyecto cuenta con [wireframes](<https://www.figma.com/design/2PINjveveJJ9ZAAwxwNoRK/Wireframes-(Copy)?node-id=0-1&t=6q0Q0id8YnjH9fJt-1>) que pueden servir de guía para el candidato. Sin embargo, el diseño de la interfaz de usuario es libre.
 
 ### Requisitos del Proyecto
 
@@ -106,7 +106,6 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
 
   - Usabilidad de la interfaz.
   - Implementación de un diseño atractivo.
-  - Consistencia con los wireframes proporcionados.
 
 - **Pruebas y Documentación:**
 
