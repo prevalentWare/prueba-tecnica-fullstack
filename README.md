@@ -1,4 +1,4 @@
-## Prueba Técnica para Desarrollador Fullstack Senior
+## Prueba Técnica para Desarrollador Fullstack
 
 ### Introducción
 
