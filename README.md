@@ -9,20 +9,18 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
 #### Funcionalidades Principales
 
 1. **Roles y Permisos**
-
    - **Roles:**
      - **Usuario:** Solo puede acceder a la gestión de movimientos.
      - **Administrador:** Puede ver los reportes, editar usuarios y agregar movimientos.
+   - **Nota:** Para efectos de prueba, todos los nuevos usuarios deben ser automáticamente asignados con el rol "ADMIN".
 
 2. **Home**
-
    - Página de inicio con un menú principal que permite la navegación a tres secciones:
      - Sistema de gestión de ingresos y gastos (disponible para todos los roles)
      - Gestión de usuarios (solo para administradores)
      - Reportes (solo para administradores)
 
 3. **Sistema de Gestión de Ingresos y Gastos**
-
    - **Vista de Ingresos y Egresos**
      - Implementar una tabla que muestre los ingresos y egresos registrados con las siguientes columnas:
        - Concepto
@@ -38,7 +36,6 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
      - Botón para guardar el nuevo movimiento.
 
 4. **Gestión de Usuarios** (solo para administradores)
-
    - **Vista de Usuarios**
      - Tabla que muestre la lista de usuarios con las siguientes columnas:
        - Nombre
@@ -64,24 +61,24 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
     - TypeScript.
     - Tailwind CSS.
     - Shadcn para componentes de la interfaz de usuario.
-    - GraphQL con Apollo Client para queries y mutaciones.
+    - NextJS API routes para comunicación con el backend.
   - **Backend:**
-    - API GraphQL con Apollo Server implementada en una ruta de API de Next.js.
+    - NextJS API routes para implementar endpoints REST.
     - Base de datos de Postgres en Supabase.
-  - **Protección de Datos:** 
-    - Implementar control de acceso basado en roles (RBAC) para asegurar que solo los usuarios autorizados puedan acceder a ciertas funcionalidades y datos.
-    - Proteger el backend para que rechace conexiones no autenticadas.
-  - **Autenticación:**
-    - Utilizar [Authjs](https://authjs.dev/) con [Auth0](https://auth0.com/) como proveedor y [Prisma](https://prisma.io) como adaptador para la autenticación por sesiones de base de datos.
-  - **Pruebas unitarias**
-    - El candidato debe agregar al menos 3 pruebas unitarias donde considere necesario.
+     - **Documentación de API:** Implementar una ruta `/api/docs` que exponga la documentación del API usando OpenAPI/Swagger. Cada endpoint creado debe estar completamente documentado con sus parámetros, respuestas y ejemplos.
+   - **Protección de Datos:**
+     - Implementar control de acceso basado en roles (RBAC) para asegurar que solo los usuarios autorizados puedan acceder a ciertas funcionalidades y datos.
+     - Proteger el backend para que rechace conexiones no autenticadas.
+   - **Autenticación:**
+     - Utilizar [Better Auth](https://www.better-auth.com/) con [GitHub](https://github.com/settings/developers) como proveedor de autenticación y [Prisma](https://prisma.io) como adaptador para la autenticación por sesiones de base de datos.
+     - **IMPORTANTE:** Todos los nuevos usuarios que se registren deben ser automáticamente asignados con el rol "ADMIN" para facilitar las pruebas de la aplicación.
+   - **Pruebas unitarias**  - El candidato debe agregar al menos 3 pruebas unitarias donde considere necesario.
   - **Despliegue:**
     - Desplegar el proyecto en Vercel.
 
 ### Entregables
 
 1. **Código Fuente:**
-
    - Repositorio en GitHub con el código fuente del proyecto.
    - Incluir un archivo README con instrucciones claras sobre cómo ejecutar el proyecto localmente y cómo desplegarlo en Vercel.
 
@@ -91,29 +88,25 @@ El objetivo de esta prueba técnica es evaluar tus habilidades en el desarrollo 
 ### Criterios de Evaluación
 
 - **Funcionalidad:**
-
   - Cumplimiento de todos los requisitos funcionales.
   - Correcta implementación del CRUD para ingresos, egresos y usuarios.
   - Generación y descarga de reportes en formato CSV.
 
 - **Calidad del Código:**
-
   - Calidad y claridad del código.
   - Uso adecuado de las mejores prácticas de desarrollo.
   - Estructura del proyecto.
+  - Documentación completa de la API con OpenAPI/Swagger.
 
 - **Diseño y UX:**
-
   - Usabilidad de la interfaz.
   - Implementación de un diseño atractivo.
 
 - **Pruebas y Documentación:**
-
   - Cobertura de pruebas unitarias.
   - Calidad de los comentarios dentro del proyecto.
 
 - **Seguridad:**
-
   - Implementación efectiva de control de acceso basado en roles (RBAC).
   - Protección adecuada de los datos sensibles.
 
